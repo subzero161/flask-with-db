@@ -13,3 +13,5 @@ Create a file called creatDB.py in your repo that contains the source code for h
 Connect your flask app to a local SQLite DB that is within your repo folder;
 Inside your flask app, create a new route called ‘/patients’;
 Within the patient-patients route, display the list of patients retrieve from the SQlite DB;
+Deploy to Azure or GCP, insert in IP of machines in readme.md file in repo;
+Share github URL with me in classroom;
