@@ -9,7 +9,7 @@ import sqlite3 # note, sqlite3 comes with python3
 
 # Connecting to sqlite
 # connection object
-connect = sqlite3.connect('patients.db')
+connect = sqlite3.connect('./flask-with-db/patients.db')
  
 # db object
 db = connect.cursor()
