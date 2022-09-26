@@ -9,7 +9,7 @@ import sqlite3 # note, sqlite3 comes with python3
 
 # Connecting to sqlite
 # connection object
-connect = sqlite3.connect('./flask-with-db/patients.db')
+connect = sqlite3.connect('patients.db')
  
 # db object
 db = connect.cursor()
@@ -45,8 +45,8 @@ db.execute("INSERT INTO patient_table(mrn, firstname, lastname, dob, insurance, 
 db.execute("INSERT INTO patient_table(mrn, firstname, lastname, dob, insurance, zipcode, lengthofstay, icd10code) values('45678', 'Bob', 'Smith', '04/04/2003', 'UnitedHealthCare', '87654', '8', '106.42')")
 db.execute("INSERT INTO patient_table(mrn, firstname, lastname, dob, insurance, zipcode, lengthofstay, icd10code) values('56789', 'Jane', 'Doe', '05/05/2004', 'Medicare', '76543', '9', '70.6' )")
 
-dummyPerson6 = """ INSERT INTO patient_table(mrn, firstname, lastname, dob, insurance, zipcode, lengthofstay, icd10code) values('32323', 'John321', 'Smith123', '01/01/2000', 'Medicaid', '65432', '4', '61.42' ) """
-db.execute(dummyPerson6)
+#dummyPerson6 = """ INSERT INTO patient_table(mrn, firstname, lastname, dob, insurance, zipcode, lengthofstay, icd10code) values('32323', 'John321', 'Smith123', '01/01/2000', 'Medicaid', '65432', '4', '61.42' ) """
+#db.execute(dummyPerson6)
 
 connect.commit()
 
